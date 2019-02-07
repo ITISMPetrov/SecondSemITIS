@@ -10,6 +10,7 @@ namespace SecondSemITIS
     {
         static void Main(string[] args)
         {
+            var lst = new Elem();
         }
     }
 }
