@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SecondSemITIS
 {
@@ -41,6 +37,34 @@ namespace SecondSemITIS
             }
         }
 
+        public void DeleteK(int k)
+        {
+            if (k == 1)
+            {
+                First = First.Next;
+                return;
+            }
+
+            Elem pred = First;
+            for (int i = 2; i < k; i++)
+            {
+                pred = pred.Next;
+            }
+            pred.Next = pred.Next.Next;
+        }
+
+        public int Count()
+        {
+            var count = 0;
+            Elem last = First;
+            while (last != null)
+            {
+                last = last.Next;
+                count++;
+            }
+
+            return count;
+        }
 
         public void Show()
         {

@@ -13,9 +13,18 @@ namespace SecondSemITIS
             var lst = new MyList();
 
             lst.AddFirst(1);
-            lst.AddLast(100);
-
-            lst.Show();   
+            lst.AddLast(2);
+            lst.AddLast(3);
+            lst.AddLast(4);
+            lst.AddLast(5);
+            lst.AddLast(6);
+            lst.AddLast(7);
+            lst.AddLast(8);
+            lst.AddLast(9);
+            Console.WriteLine(lst.Count());
+            lst.DeleteK(5);
+            lst.Show();
+            Console.WriteLine(lst.Count());
         }
     }
 }
