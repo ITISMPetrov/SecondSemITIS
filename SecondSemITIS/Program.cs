@@ -10,6 +10,12 @@ namespace SecondSemITIS
     {
         static void Main(string[] args)
         {
+            var lst = new MyList();
+
+            lst.AddFirst(1);
+            lst.AddLast(100);
+
+            lst.Show();   
         }
     }
 }
