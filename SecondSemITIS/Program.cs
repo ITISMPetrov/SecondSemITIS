@@ -21,6 +21,7 @@ namespace SecondSemITIS
             lst.AddLast(7);
             lst.AddLast(8);
             lst.AddLast(9);
+            lst.Show();
             Console.WriteLine(lst.Count());
             lst.DeleteK(5);
             lst.Show();
